@@ -123,6 +123,7 @@ int main() // função principal "primeira a ser executada"
 		printf("\t1 - Registrar nomes\n"); // opção 1 (o \t apenas tabula)
 		printf("\t2 - Consultar nomes\n"); // opção 2
 		printf("\t3 - Deletar nomes\n\n"); // opção 3
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: ");
 	
 		scanf("%d", &opcao); // define opção escolhida pelo usuário
@@ -141,6 +142,11 @@ int main() // função principal "primeira a ser executada"
 			case 3:
 				deletar(); // executa deletar se opcao = 3
 				break; // break no laço for
+				
+			case 4:
+				printf("Obrigado por utilizar o sistema!\n");
+				return 0;
+				break;
 				
 			default:
 				printf("Esta opção não esta disponível!\n"); // se opcao for algo diferente de 1, 2, 3
